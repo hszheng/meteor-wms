@@ -1,0 +1,78 @@
+<template name="home">
+    <style>
+    html,
+    body,
+    #__blaze-root {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+    </style>
+    <div id="homeContainer">
+        <!--<input type="text" class="searchInput" placeholder="寻找宝贝或品牌">-->
+        <!-- 顶部搜索框 -->
+        <div class="searchInputArea">
+            <div class="innerInput">
+                <button class="searchLogoArea"><img src="/searchBtn.png" alt="搜索图标"></button>
+                <input type="text" class="search" placeholder='寻找产品或品牌'>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--广告栏图片 区域-->
+        <div class="adsArea">
+            <div class="allProducetsText gotoSearchResult">
+                <a>查看全部商品＞</a>
+            </div>
+        </div>
+        <div class="homeNotice">
+            <h1 class="noticeText">公告新闻<span class="close">＞</span><span class="showAll">显示全部</span></h1>
+            <div class="noticeList">
+            </div>
+        </div>
+        <!--分割线-->
+        <div class="splitLine">
+        </div>
+        <!--产品分类区域 -->
+        <div class="productCategory ">
+          <h1 class="title">产品类别<span class="close">＞</span><span class="showAll">显示全部</span></h1>
+            <!-- <a>产品类别<span class="showAll">显示全部＞</span></a> -->
+            <div class="productItemLists">
+            </div>
+        </div>
+        <!--分割线-->
+        <div class="splitLine">
+        </div>
+        <!--品牌分类区域-->
+        <div class="brandCategory">
+             <h1 class="title">品牌分类<span class="close">＞</span><span class="showAll">显示全部</span></h1>
+            <div class="productItemLists">
+            </div>
+        </div>
+        <!--弹出框-->
+        <div class="fullPopup">
+            <div class="popup">
+                <div class="popupBtn">
+                    <div class="laterBtn">
+                        稍后
+                    </div>
+                    <div class="updateBtn">
+                        前往更新
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contractTipContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p><img src="/makeSure.png" alt="购物车按钮"></p>
+                    <p id="contractIsTipText">您的合同已通过审核，请尽快付款</p>
+                    <div class="alertOperationBtn operationBtn">
+                        <button id="cancleContrctTip">取消</button>
+                        <button class="redBtn" id="saveContractTip">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

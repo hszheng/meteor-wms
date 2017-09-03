@@ -1,0 +1,266 @@
+#searchResultPage {
+    .backBtn {
+        width: 1.093333rem;
+        img {
+            width: 45%;
+            vertical-align: middle;
+        }
+    }
+    .innerInput {
+        width: 75%;
+        /*搜索结果*/
+        #searchResultArea {
+            position: absolute;
+            display: none;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            z-index: 1;
+            .result {
+                width: 100%;
+                height: 0.906667rem;
+                p {
+                    width: 80%;
+                    line-height: 0.906667rem;
+                    margin: 0 auto;
+                    border-bottom: 1px solid #ddd;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    .redI {
+        font-style: normal;
+        color: #e53939;
+    }
+    .redBtn {
+        background-color: #e53939 !important;
+        color: #fff;
+    }
+    .close {
+        transform: rotate(180deg);
+        transition: all .3s ease-in;
+    }
+    .open {
+        transform: rotate(0deg);
+        transition: all .3s ease-in;
+    }
+    /*排序菜单*/
+    .sortMenu {
+        position: relative;
+        width: 100%;
+        height: 1.146667rem;
+        border-top: 1px solid #ddd;
+        margin-bottom: 0.266667rem;
+        background-color: #fff;
+        .menuListArea {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            .menu {
+                float: left;
+                width: 33.3%;
+                height: 1.14rem;
+                text-align: center;
+                button {
+                    line-height: 1.2rem;
+                    font-size: 0.4rem;
+                    font-weight: bold;
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    padding: 0 0.4rem;
+                    span {
+                        text-align: center;
+                        img {
+                            width: 0.4rem;
+                            height: 0.25rem;
+                        }
+                        .price {
+                            height: 0.4rem;
+                            vertical-align: middle;
+                            margin-top: -3px;
+                        }
+                    }
+                }
+                .buttonBorder {
+                    background: #fff;
+                    border-left: 1px solid #ddd;
+                    border-right: 1px solid #ddd;
+                }
+            }
+        }
+        /*筛选条件展开区域*/
+        .filtrateArea {
+            position: absolute;
+            display: none;
+            top: 1.146667rem;
+            width: 100%;
+            min-height: 7.8rem;
+            z-index: 1;
+            border-bottom: 1px solid #ddd;
+            /*background:url(/productions/chooseItemBg.png);*/
+            background-color: #fff;
+            .chooseArea {
+                width: 90%;
+                margin: 0.4rem auto 0;
+                min-height: 2.16rem;
+                .itemTitle {
+                    line-height: 3;
+                    font-size: 0.4rem;
+                    span {
+                        display: none;
+                        float: right;
+                    }
+                }
+                .chooseListContainer {
+                    width: 100%;
+                    height: 2.78rem;
+                    overflow-y: scroll;
+                    .chooseItemLists {
+                        width: 100%;
+                        .item {
+                            float: left;
+                            margin-bottom: 0.2rem;
+                            margin-right: 0.333333rem;
+                            button {
+                                padding: 2px 7px;
+                                height: 0.733333rem;
+                                border: 1px solid #ccc;
+                                background-color: #f7f7f7;
+                                border-radius: 5px;
+                                font-size: 0.346667rem;
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .optionBtn {
+                width: 100%;
+                margin-top: 0.333333rem;
+                .innerArea {
+                    width: 70%;
+                    margin: 0 auto;
+                    .resetBtn {
+                        width: 45%;
+                        height: 0.933333rem;
+                        float: left;
+                        /*margin-top: 0.4rem;*/
+                        margin-bottom: 0.2rem;
+                        width: 2.466667rem;
+                        height: 0.933333rem;
+                        line-height: 0.933333rem;
+                        background-color: #fff;
+                        font-size: 0.4rem;
+                        color: #e53939;
+                        border: 1px solid #e53939;
+                        text-align: center;
+                        border-radius: 0.12rem;
+                        cursor: pointer;
+                    }
+                    .ensureBtn {
+                        width: 45%;
+                        height: 0.933333rem;
+                        float: right;
+                        /*margin-top: 0.4rem;*/
+                        margin-bottom: 0.2rem;
+                        width: 2.466667rem;
+                        height: 0.933333rem;
+                        line-height: 0.933333rem;
+                        background-color: #e53939;
+                        font-size: 0.4rem;
+                        color: #fff;
+                        border: 0.025rem solid #e53939;
+                        text-align: center;
+                        border-radius: 0.12rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    /*商品列表*/
+    .goodsContainer {
+        width: 100%;
+        /*height: 8.6rem;*/
+        height:12.6rem;
+        padding-bottom:1.3rem;
+        overflow-y: scroll;
+        .goodsLists {
+            width: 100%;
+            overflow: auto;
+            padding-top: 0.266667rem;
+            background-color: #fff;
+            .goods {
+                width: 100%;
+                height: 1.506667rem;
+                border-bottom: 1px solid #ddd;
+                padding: 0.173333rem 0.466667rem 0;
+                .goodsInfoLeft {
+                    float: left;
+                    width: 65%;
+                    .productName {
+                        width: 95%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        height:0.5rem;
+                    }
+                }
+                .goodsInfoRight {
+                    float: right;
+                    width: 35%;
+                    text-align: right;
+                }
+                h3 {
+                    /*font-size: 0.30rem;*/
+                    color: #333;
+                    
+                }
+                p {
+                    font-size: 0.30rem;
+                    color: #999;
+                    line-height: 1.5;
+                    .serachClickTimes {
+                        margin-left: 0.266667rem;
+                        line-height: 1.5;
+                        i{
+                            margin-left:0.10rem;
+                        }
+                        
+                    }
+                }
+            }
+            .noneResult {
+                width: 100%;
+                margin-top: 0.4rem;
+                display: block;
+                height: 6.8rem;
+                .noneGoods {
+                   
+                    font-size: 0.4rem;
+                    width:95%;
+                    margin:0 auto;
+                    a{
+                        margin-right:10px;
+                        display:inline-block;
+                    }
+                }
+                img {
+                    display: block;
+                    margin: 10px auto;
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+    /*.emptyElement{
+        width: 100%;
+        height: 1.4rem;
+    }*/
+}

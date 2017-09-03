@@ -1,0 +1,20 @@
+<template name="addressList">    
+    <div class="contractDetails addressList">
+        <div class="withdraw">我的收货地址</div>
+        <div class="deliveryBox" id="deliveryBox"></div>
+        <div id="submit-region">
+            <button class="button default">＋新建收货地址</button>
+        </div>           
+    </div>        
+</template>
+
+<template name="tplAddressList">
+   {{#each $mapped addressList}}
+    <div class="deliveryInfo" data-id="{{_id}}">
+        <div class="user"><span class="name">{{receiver}}</span><span class="phone">{{contactPhone}}</span></div>
+        <div class="address">{{area}}{{address}}</div>
+    </div>
+   {{/each}}
+</template>
+
+  

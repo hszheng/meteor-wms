@@ -1,0 +1,133 @@
+<template name="authenticate">
+    <div class="weui_dialog_alert">
+        <div class="weui_mask"></div>
+        <div class="weui_dialog">
+            <div class="weui_dialog_hd">
+                <strong class="weui_dialog_title">提示</strong>
+            </div>
+            <div class="weui_dialog_bd"></div>
+            <div class="weui_dialog_ft">
+                <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+            </div>
+        </div>
+    </div>
+    <div class="authenticateInfo">
+        <div class="withdraw">信息认证</div>
+        <div class="userType">
+            <div class="enterprise select">企业</div>
+            <div class="personal">个人</div>
+        </div>
+        <!-- 企业填写信息 -->
+        <div class="corporateInfo">
+            <div class="infoUnit">
+                <div class="company">企业信息<span class="ssterisk">(*号为必填)</span></div>
+                <input type="text" name="unit" class="unit" placeholder="单位名称">
+                <input type="text" name="license" class="license" placeholder="税务登记号/营业执照">
+                <span class="ssterisk1">*</span>
+                <span class="ssterisk2">*</span>
+            </div>
+            <div class="introduction">
+                <div class="presentation">公司简介</div>
+                <textarea class="preface"></textarea>
+                <input type="text" name="landline" class="landline" placeholder="座机">
+                <input type="text" name="fax" class="fax" placeholder="传真">
+                <!-- <span class="ssterisk1">*</span> -->
+                <span class="ssterisk2">*</span>
+                <span class="ssterisk3">*</span>
+            </div>
+            <div class="account">
+                <div class="record">账户信息</div>
+                <input type="text" name="name" class="name" placeholder="户名">
+                <input type="text" name="bank" class="bank" placeholder="开户行">
+                <input type="text" name="account" class="account" placeholder="帐号">
+                <input type="text" name="address" class="address" placeholder="单位地址">
+                <!-- <span class="ssterisk1">*</span>
+				<span class="ssterisk2">*</span>
+				<span class="ssterisk3">*</span>-->
+                <span class="ssterisk4">*</span>
+            </div>
+            <div class="headman">
+                <div class="president">负责人信息</div>
+                <input type="text" name="principal" class="principal" placeholder="负责人">
+                <!-- <input type="text" name="beeline" class="beeline" placeholder="直线"> -->
+                <input type="text" name="phone" class="phone" placeholder="手机号码/座机号">
+                <input type="text" name="mailbox" class="mailbox" placeholder="邮箱">
+                <input type="text" name="QQ" class="QQ" placeholder="QQ">
+                <input type="text" name="weChat" class="weChat" placeholder="微信">
+                <span class="ssterisk1">*</span>
+                <span class="ssterisk2">*</span>
+                <!-- <span class="ssterisk3">*</span>
+				<span class="ssterisk4">*</span> -->
+                <span class="ssterisk5">*</span>
+                <span class="ssterisk6">*</span>
+            </div>
+            <div class="otherInfo">
+                <div class="separate">其他信息</div>
+                <input type="text" name="certificate" class="certificate" placeholder="代理证书编号">
+            </div>
+            <div class="pattern">
+                <div class="main"><span>*</span>公司销售主营模式(可多选)</div>
+                <div class="method">
+                    <div class="business">商务</div>
+                    <div class="OME">OEM</div>
+                    <div class="technology">技术</div>
+                    <div class="project">项目</div>
+                    <div class="service">维修</div>
+                    <div class="other">其他</div>
+                </div>
+            </div>
+            <div class="firmAttest">申请认证</div>
+        </div>
+        <!-- 个人填写信息 -->
+        <div class="personalInfo">
+            <div class="basicInfo">
+                <div class="cardinal">基本信息<span class="ssterisk">(*号为必填)</span></div>
+                <input type="text" name="fullName" class="fullName" placeholder="姓名">
+                <input type="text" name="idCard" class="idCard" placeholder="身份证号">
+                <span class="ssterisk1">*</span>
+                <!-- <span class="ssterisk2">*</span> -->
+            </div>
+            <div class="contactInfo">
+                <div class="contact">联系方式</div>
+                <input type="text" name="cellphone" class="cellphone" placeholder="手机号">
+                <input type="text" name="contactAdd" class="contactAdd" placeholder="联系地址">
+                <input type="text" name="postbox" class="postbox" placeholder="邮箱">
+                <input type="text" name="tencent" class="tencent" placeholder="QQ">
+                <input type="text" name="letter" class="letter" placeholder="微信">
+                <span class="ssterisk1">*</span>
+                <span class="ssterisk2">*</span>
+                <!-- <span class="ssterisk3">*</span>
+				<span class="ssterisk4">*</span> -->
+                <span class="ssterisk5">*</span>
+            </div>
+            <div class="pesalAccount">
+                <div class="record">账户信息</div>
+                <input type="text" name="names" class="names" placeholder="户名">
+                <input type="text" name="banks" class="banks" placeholder="开户行">
+                <input type="text" name="accounts" class="accounts" placeholder="帐号">
+                <!-- <span class="ssterisk1">*</span>
+				<span class="ssterisk2">*</span>
+				<span class="ssterisk3">*</span> -->
+            </div>
+            <div class="introduction">
+                <div class="otherIofn"><b>其他信息</b></div>
+                <div class="detail">自我介绍</div>
+                <textarea class="substance"></textarea>
+                <!-- <span class="ssterisk1">*</span> -->
+            </div>
+            <div class="specialty">
+                <div class="individual">
+                    <!-- <span>*</span> -->个人特长</div>
+                <div class="oneself">
+                    <div class="business">商务</div>
+                    <div class="OME">OEM</div>
+                    <div class="technology">技术</div>
+                    <div class="project">项目</div>
+                    <div class="service">维修</div>
+                    <div class="other">其他</div>
+                </div>
+            </div>
+            <div class="personalAttest">申请认证</div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,370 @@
+.customService {
+    position: relative;
+    background-color: #eee;
+    height: 100%;
+    padding-bottom: 3.553334rem;
+    .headText {
+        width: 98%;
+        margin: 0 auto;
+        background-color: #EEE5DE;
+        padding-top: 0.133333rem;
+        padding-bottom: 0.133333rem;
+        /*height: 1.1rem;*/
+        text-align: left;
+        p {
+            font-size: 0.306667rem;
+            width:100%;
+            a{
+                margin-right:13px;
+                display:inline-block;
+            }
+        }
+    }
+    .messages-content {
+        width: 100%;
+        background-color: #eee;
+        height: 100%;
+        overflow: auto;
+    }
+    .messages {
+        /*      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;*/
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        margin-bottom:0.5rem;
+    }
+    .messages-date {
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.32rem;
+        line-height: 1;
+        margin: 0.1rem 15px;
+        color: #8e8e93;
+    }
+    html.ios-gt-8 .messages-date {
+        font-weight: 600;
+    }
+    .messages-date span {
+        font-weight: 400;
+        font-size: 0.25rem;
+    }
+    .message {
+        box-sizing: border-box;
+        margin: 1px 10px 0;
+        max-width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .message:first-child {
+        margin-top: 10px;
+    }
+    .message .message-text {
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 6px 16px 9px;
+        min-width: 48px;
+        min-height: 35px;
+        font-size: 0.35rem;
+        line-height: 1.2;
+        word-break: break-word;
+        margin-bottom: 0.166667rem;
+        line-height: 1.42;
+    }
+    .message.message-pic .message-text {
+        padding: 0;
+        background: none;
+    }
+    .message.message-pic img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        border-radius: 6px;
+    }
+    .message-name {
+        font-size: 0.213333rem;
+        line-height: 1;
+        color: #8e8e93;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+    .message-hide-name .message-name {
+        display: none;
+    }
+    .message-label {
+        font-size: 0.186667rem;
+        line-height: 1;
+        color: #8e8e93;
+        margin-top: 4px;
+    }
+    .message-hide-label .message-label {
+        display: none;
+    }
+    .message-received {
+        -ms-flex-item-align: end;
+        -webkit-align-self: flex-end;
+        align-self: flex-end;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+    }
+    .message-received .message-name {
+        margin-right: 16px;
+    }
+    .message-received .message-label {
+        margin-right: 6px;
+    }
+    .message-received.message-with-avatar .message-text {
+        margin-right: 0.32rem;
+    }
+    .message-received.message-with-avatar .message-name {
+        margin-right: 0.853333rem;
+    }
+    .message-received.message-with-avatar .message-label {
+        margin-right: 0.453333rem;
+    }
+    .message-received .message-text {
+        padding-right: 0.293333rem;
+        background-color: #f66c6c;
+        color: white;
+        margin-left: auto;
+    }
+    .message-received.message-last .message-text,
+    .message-received.message-with-tail .message-text {
+        border-radius: 6px 0 6px 6px;
+    }
+    .message-received.message-last.message-pic img,
+    .message-received.message-with-tail.message-pic img {
+        border-radius: 6px 0 6px 6px;
+    }
+    .message-sent {
+        -ms-flex-item-align: start;
+        -webkit-align-self: flex-start;
+        align-self: flex-start;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+    .message-sent .message-text {
+        padding-left: 0.293333rem;
+        background-color: #f8f8f8;
+        background-color: #fff;
+        color: #323232;
+    }
+    .message-sent .message-name {
+        margin-left: 0.213333rem;
+    }
+    .message-sent .message-label {
+        margin-left: 6px;
+    }
+    .message-sent.message-with-avatar .message-text {
+        margin-left: 0.32rem;
+    }
+    .message-sent.message-with-avatar .message-name {
+        margin-left: 0.853333rem;
+    }
+    .message-sent.message-with-avatar .message-label {
+        margin-left: 0.453333rem;
+    }
+    .message-sent.message-last .message-text,
+    .message-sent.message-with-tail .message-text {
+        border-radius: 0 6px 6px 6px;
+    }
+    .message-sent.message-last.message-pic img,
+    .message-sent.message-with-tail.message-pic img {
+        border-radius: 0 6px 6px 6px;
+    }
+    .message-last {
+        margin-bottom: 8px;
+    }
+    .message-appear-from-bottom {
+        -webkit-animation: messageAppearFromBottom 400ms;
+        animation: messageAppearFromBottom 400ms;
+    }
+    .message-appear-from-top {
+        -webkit-animation: messageAppearFromTop 400ms;
+        animation: messageAppearFromTop 400ms;
+    }
+    .messages-auto-layout .message-name,
+    .messages-auto-layout .message-label {
+        display: none;
+    }
+    .messages-auto-layout .message-avatar {
+        opacity: 0;
+    }
+    .messages-auto-layout .message-first .message-name {
+        display: block;
+    }
+    .messages-auto-layout .message-last .message-avatar {
+        opacity: 1;
+    }
+    .messages-auto-layout .message-last .message-label {
+        display: block;
+    }
+    html.retina.ios-6 .message,
+    html.retina.ios-6 .message.message-pic img {
+        -webkit-mask-box-image: none;
+        border-radius: 6px;
+    }
+    @-webkit-keyframes messageAppearFromBottom {
+        from {
+            -webkit-transform: translate3d(0, 100%, 0);
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes messageAppearFromBottom {
+        from {
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    @-webkit-keyframes messageAppearFromTop {
+        from {
+            -webkit-transform: translate3d(0, -100%, 0);
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes messageAppearFromTop {
+        from {
+            transform: translate3d(0, -100%, 0);
+        }
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .message.message-with-avatar {
+        position: relative;
+    }
+    .message-received .message-text:before {
+        content: "";
+        position: absolute;
+        top: 0.3rem;
+        right: 2px;
+        width: 0;
+        height: 0;
+        border-width: 0.333333rem 0.333333rem 0 0;
+        border-style: solid;
+        border-color: #f66c6c transparent transparent transparent;
+    }
+    .message-sent .message-text:after {
+        content: "";
+        position: absolute;
+        top: 0.4rem;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-width: 0 0.333333rem 0.333333rem 0;
+        border-style: solid;
+        border-color: transparent #fff transparent transparent;
+    }
+    .messagebar {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition-duration: 0ms;
+        transition-duration: 0ms;
+    }
+    .messagebar textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #c8c8cd;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: none;
+        display: block;
+        padding: 3px 8px 3px;
+        margin: 0;
+        width: 85%;
+        height: 0.8rem;
+        color: #000;
+        font-size: 17px;
+        line-height: 20px;
+        font-family: inherit;
+        resize: none;
+        -webkit-flex-shrink: 1;
+        -ms-flex: 0 1 auto;
+        flex-shrink: 1;
+    }
+    .messagebar .link {
+        -ms-flex-item-align: flex-end;
+        -webkit-align-self: flex-end;
+        align-self: flex-end;
+    }
+    .messagebar .link.icon-only:first-child {
+        margin-left: -6px;
+    }
+    .messagebar .link:not(.icon-only) + textarea {
+        margin-left: 0.106667rem;
+    }
+    .messagebar textarea + .link {
+        margin-left: 0.106667rem;
+    }
+    .messagebar .link {
+        -webkit-flex-shrink: 0;
+        -ms-flex: 0 0 auto;
+        flex-shrink: 0;
+    }
+    .messagebar ~ .page-content {
+        padding-bottom: 50px;
+    }
+    .sendMessage {
+        position: fixed;
+        bottom: 1.266667rem;
+        width: 10.0rem;
+        background-color: #fff;
+        padding: 5px 0.266667rem;
+        span {
+            float: left;
+            width: 85%;
+            min-height: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+            padding: 0.133333rem 5px;
+            font-size: 0.373333rem;
+            display: block
+        }
+        textarea {
+            float: left;
+            width: 85%;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+            padding: 0.133333rem 5px 0;
+            font-size: 0.373333rem;
+        }
+        a.link {
+            float: left;
+            width: 15%;
+            line-height: 0.8rem;
+            text-decoration: none;
+            text-align: center;
+            color: #999;
+            font-size: 20px;
+        }
+    }
+}

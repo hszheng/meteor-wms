@@ -1,0 +1,58 @@
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.contractDetails.addressList  {
+    background-color: #ededed;
+    height:auto;
+    padding-bottom:2.5rem;
+    .deliveryInfo {
+        .clearfix();        
+        margin-left: 0;
+        padding-left: 0.533333rem;
+        background-color: #fff;
+        border:none;
+        border-bottom: solid 1px #ededed;
+        margin-top: 0.266667rem;
+        padding-bottom: 0.333333rem;
+        width: auto;
+        height: auto;        
+    }
+    .deliveryBox {
+        margin-top:0.266667rem;
+        .clearfix();
+    }   
+  @theme-color:#e53939;    
+    #submit-region {
+        position: fixed;
+        width:10.0rem;
+        bottom: 1.266667rem;
+        height: 1.066667rem;
+        background: #fff;
+        padding-left:0.24rem;
+        padding-right:0.24rem;
+        .button {
+            display: block;
+            margin: 0.173333rem auto;
+            height:0.733333rem;
+            width:9.16rem; 
+            font-size: 0.373333rem;
+            outline: none; 
+              &.default {
+                border:none;
+                color:@theme-color;
+                background-color: transparent;
+                border:solid 1px @theme-color;
+              }
+        }
+
+    }    
+}
+

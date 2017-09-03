@@ -1,0 +1,37 @@
+<template name='searchPage'>
+    <div id="searchPageContainer" class="searchAndResultPage">
+        <div class="searchInputArea">
+            <div class="searchText">工控现货仓</div>
+            <div class="searchInputBtnArea">
+                <button class="backBtn"><img src="/leftArrows.png" alt="左箭头"></button>
+                <div class="innerInput">
+                    <button class="searchLogoArea" id="searchPageBtn"><img src="/searchBtn.png" alt="搜索图标"></button>
+                    <input type="text" class="search" placeholder='寻找产品或品牌' id="keywords">
+                    <div class="clear"></div>
+                    <div class="resultArea" id="resultArea"></div>
+                </div>
+                <!-- <button class="cancle">取消</button> -->
+                <button class="ensure">搜索</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="searchArea">
+            <div class="reminderArea">
+                <h4>温馨提示</h4>
+                <p>无需输入空格和横杠</p>
+                <p>“0”和“O”通用</p>
+                <p>“1”和“I”通用</p>
+            </div>
+            <div class="scanAllProduct">
+                <button>查看商品</button>
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="goodsLists">
+            <div class="noneResult">
+                <p class="noneGoods">对不起，没有找到匹配的商品</p><img src="/productions/error.jpg">
+            </div>
+        </div>
+        <div class="emptyElement"></div>
+    </div>
+</template>

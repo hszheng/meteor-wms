@@ -1,0 +1,20 @@
+<template name="pcBatchUpload">
+	<div id="batchContainer">
+		<div class="container">
+			<h2 class="tip">点击下载模板再按照模板将产品资料填好</h2><br/>
+			<p>提示以下的值只能是下面的值：</p>
+			<p class="redTip">1.批量购买是否优惠只能是：TRUE或者FALSE</p>
+			<p class="redTip">2.待销售状况：急于出手，特价，常规库存</p>
+			<p class="redTip">3.产品状态说明：正品，备件，其他</p>
+			<p class="redTip">4.库存类型：原装正品，原装开包，待定，其他，特定产品，迅创为仓库</p>
+			<p class="redTip">5.品牌：西门子，三菱，松下，ABB，欧姆龙，施耐德，台达</p>
+			<p class="redTip">6.产品分类：PLC，变频器，触摸屏，伺服驱动，低压电器，传感器</p>
+			<p class="redTip">7.单位：个，台，包，米，PCS，其他</p>
+			<br/>
+			<p><a href="/模板.xls" download>下载模板</a></p><br/>
+			<p>将根据模板填写好的excel上传再点击上传按钮</p><br/>
+			<p><input type="file" class="productFile"></p><br/>
+			<p><button class="batchUpload">上传</button> <button class="getBack">返回</button></p><br/>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,491 @@
+#uploadingPage {
+    width: 10.0rem;
+    height: auto;
+    padding-bottom:1.5rem;
+    /*顶部按钮*/
+    /*.topMenuArea {
+        width: 95%;
+        height: 2.0rem;
+        padding-top: 0.266667rem;
+        margin: 0 auto;
+        .editProduction {
+            width: 100%;
+            height: 1.466667rem;
+            border: none;
+            background: url(/redBtn.png) no-repeat;
+            background-size: 100%;
+            color: #fff;
+            font-size: 0.5rem;
+            outline: none;
+        }
+    }*/
+    .topMenuArea {
+        width: 95%;
+        height: 1.4rem;
+        padding-top: 0.166667rem;
+        margin: 0 auto;
+        .editProduction {
+            width: 100%;
+            height: 1.0rem;
+            border: none;
+            /*background: url(/redBtn.png) no-repeat;*/
+            background-color: #e53939;
+            border-radius: 0.133333rem;
+            line-height: 1.0rem;
+            background-size: 100%;
+            color: #fff;
+            font-size: 0.5rem;
+            outline: none;
+            img {
+                float: left;
+                height: 0.466667rem;
+                margin-left: 0.533333rem;
+                margin-top: 0.25rem;
+                width: 0.266667rem;
+                height: 0.466667rem;
+            }
+        }
+    }
+    /*产品详情页 height: 12.8rem;*/
+    .productionInfo {
+        width: 97%;
+        height: calc(~'100vh - 140px');
+        overflow: auto;
+        margin: 0 auto;
+        .addPic {
+            width: 100%;
+            height: 3.133333rem;
+            padding-left: 0.333333rem;
+            /*产品图片区*/
+            .imgLists {
+                width: 100%;
+                height: 2.133333rem;
+                margin: 0.4rem 0;
+                .commonImgArea {
+                    float: left;
+                    margin-right: 0.133333rem;
+                    width: 23%;
+                    height: 100%;
+                    border: 1px solid #ddd;
+                    border-radius: 0.066667rem;
+                    text-align: center;
+                    span {
+                        text-align: center;
+                        line-height: 2rem;
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .addNew {
+                    position: relative;
+                    #addNewImgBtn {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                    form {
+                        overflow: hidden;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        .uploadPanel {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            .upload-control {
+                                width: 100%;
+                                height: 100%;
+                                padding: 0;
+                                display: block;
+                                .jqUploadclass {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .imgArea {
+                    position: relative;
+                    background: url('/loading.gif') no-repeat center;
+                    .cancleThisPic {
+                        position: absolute;
+                        top: -0.133333rem;
+                        right: 0;
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        background: url(/close.png) no-repeat center;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+        /*产品信息*/
+        .productionDetails {
+            width: 100%;
+            h3 {
+                padding-left: 0.333333rem;
+                height: 0.433333rem;
+            }
+            /*公共输入框样式*/
+            .commonInputArea {
+                width: 96%;
+                height: 1.0rem;
+                margin-top: 0.133333rem;
+                .leftIcon {
+                    float: left;
+                    width: 4%;
+                    height: 1rem;
+                }
+                input {
+                    float: left;
+                    width: 96%;
+                    height: 0.906667rem;
+                    border: 1px solid #ddd;
+                    border-radius: 0.066667rem;
+                    background-color: transparent;
+                    padding-left: 0.266667rem;
+                    font-size: 0.413333rem;
+                    background-color: #fff;
+                }
+                .commonChooseArea {
+                    width: 100%;
+                    height: 100%;
+                    .commonLeftArea {
+                        float: left;
+                        height: 100%;
+                        p {
+                            height: 100%;
+                            font-size: 0.413333rem;
+                            line-height: 2.3;
+                        }
+                    }
+                    .commonRightArea {
+                        float: left;
+                        border-radius: 0.133333rem;
+                        border-top: 1px solid #ddd;
+                        border-left: 1px solid #ddd;
+                        overflow: hidden;
+                        .units {
+                            float: left;
+                            height: 95%;
+                            border-bottom: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
+                            background-color: #fff;
+                            p {
+                                height: 100%;
+                                font-size: 0.413333rem;
+                                line-height: 2.3;
+                                color: #999;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    #categories {
+                        z-index: 2;
+                    }
+
+                    #productBrandIndex{
+                        z-index:1;
+                    }
+                }
+            }
+            /*单位选择样式*/
+            .unitsLists {
+                .commonLeftArea {
+                    width: 13%;
+                }
+                .commonRightArea {
+                    width: 83%;
+                    .units {
+                        width: 16.6%;
+                    }
+                }
+            }
+            /*批量购买优惠 & 是否提供发票 &*/
+            .commonChooseContainer {
+                margin-top: 0.1rem;
+                .commonLeftArea {
+                    width: 29%;
+                }
+                .commonRightArea {
+                    float: right !important;
+                    width: 60%;
+                    margin-left: 13px;
+                    .yesOrNO {
+                        width: 50%;
+                    }
+                }
+            }
+            /*是否提供发票*/
+            .hasBill {
+                margin: 0.35rem 0 0.56rem;
+            }
+            /*产品状态说明 & */
+            .threeChooseItem {
+                .commonRightArea {
+                    .stateType {
+                        width: 33.2%;
+                    }
+                }
+            }
+            /*待销售状况*/
+            .sellCondition {
+                margin-top: 0.10rem;
+            }
+            /*库存类别*/
+            .selectorContainer {
+                position: relative;
+                .commonRightArea {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border: 1px solid #ddd;
+                    background-color: #fff;
+                    .selectArea {
+                        width: 90%;
+                        margin: 0 auto;
+                        font-size: 0.333333rem;
+                        .currentSelectItem {
+                            height: 0.866667rem;
+                            input {
+                                float: left;
+                                width: 95%;
+                                height: 0.866667rem;
+                                text-align: center;
+                                border: none;
+                            }
+                            span {
+                                float: left;
+                                width: 5%;
+                                height: 0.866667rem;
+                                background: url(/arrows.png) no-repeat center;
+                            }
+                            .open {
+                                transform: rotate(0deg);
+                                -ms-transform: rotate(0deg);
+                                /* IE 9 */
+                                -moz-transform: rotate(0deg);
+                                /* Firefox */
+                                -webkit-transform: rotate(0deg);
+                                /* Safari 和 Chrome */
+                                -o-transform: rotate(0deg);
+                                transition: all .3s ease-in;
+                                -moz-transition: all .3s ease-in;
+                                /* Firefox 4 */
+                                -webkit-transition: all .3s ease-in;
+                                /* Safari 和 Chrome */
+                                -o-transition: all .3s ease-in;
+                                /* Opera */
+                            }
+                            .close {
+                                transform: rotate(-180deg);
+                                -ms-transform: rotate(-180deg);
+                                /* IE 9 */
+                                -moz-transform: rotate(-180deg);
+                                /* Firefox */
+                                -webkit-transform: rotate(-180deg);
+                                /* Safari 和 Chrome */
+                                -o-transform: rotate(-180deg);
+                                /* Opera */
+                                transition: all .3s ease-in;
+                                -moz-transition: all .3s ease-in;
+                                /* Firefox 4 */
+                                -webkit-transition: all .3s ease-in;
+                                /* Safari 和 Chrome */
+                                -o-transition: all .3s ease-in;
+                                /* Opera */
+                            }
+                        }
+                        ul {
+                            display: none;
+                            width: 100%;
+                            border-top: 1px solid #ddd;
+                            li {
+                                list-style: none;
+                                text-align: center;
+                                p {
+                                    line-height: 0.666667rem;
+                                    color: #999;
+                                }
+                                p:hover {
+                                    color: #e53939;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*公共样式*/
+        .productionInfoH3 {
+            font-size: 0.4rem;
+            letter-spacing: 0.053333rem;
+            span {
+                color: #999;
+                font-size: 0.333333rem;
+                letter-spacing: 0;
+            }
+        }
+        .redI {
+            color: #e53939;
+            line-height: 1.0rem;
+            font-size: 0.4rem;
+            font-weight: bold;
+        }
+        .redBtn {
+            background-color: #e53939 !important;
+            color: #fff !important;
+            p {
+                color: #fff !important;
+            }
+        }
+        .fontSize23 {
+            font-size: 0.36rem !important;
+            line-height: 2.5 !important;
+        }
+    }
+    /*底部按钮 height: 2.0rem;*/
+    .submitProductionInfoBtn {
+        width: 91%;
+        /*height: 4.0rem;*/
+        padding-top: 0.1rem;
+        padding-bottom: 0.3rem;
+        margin: 0 auto;
+        .editProduction {
+            width: 100%;
+            height: 0.866667rem;
+            border: none;
+            border-radius: 0.066667rem;
+            background: #e53939;
+            background-size: 100%;
+            color: #fff;
+            font-size: 0.4rem;
+            outline: none;
+        }
+        .delete {
+            background-color: #fff;
+            color: #e53939;
+            border: 1px solid #e53939;
+            margin: 0.266667rem 0 0.266667rem;
+        }
+    }
+    /*弹出框*/
+    .coverContainer {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        .successAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 7.466667rem;
+            height: 5.333333rem;
+            border-radius: 5px;
+            background-color: #fff;
+            .innerArea {
+                width: 75%;
+                height: 80%;
+                margin: 7% auto;
+                p {
+                    margin-bottom: 0.4rem;
+                    text-align: center;
+                    line-height: 0.533333rem;
+                    font-size: 0.426667rem;
+                }
+                .alertOperationBtn {
+                    position: relative;
+                    border-top: none;
+                    height: 0.933333rem;
+                    margin-top: 0.666667rem;
+                    padding: 0;
+                    button {
+                        width: 45%;
+                        height: 0.933333rem;
+                        border: 1px solid #e53939;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        color: #e53939;
+                        font-size: 0.426667rem;
+                        outline: none;
+                    }
+                    .redBtn {
+                        margin-left: 0.333333rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .uploadTipContainer {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 3;
+        .successAlert {
+            position: absolute;
+            top: 2rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 8.466667rem;
+            border-radius: 5px;
+            background-color: #fff;
+            .innerArea {
+                width: 80%;
+                height: 80%;
+                margin: 7% auto;
+                p {
+                    margin-bottom: 0.4rem;
+                    text-align: center;
+                    line-height: 0.533333rem;
+                    font-size: 0.426667rem;
+                }
+                .alertOperationBtn {
+                    position: relative;
+                    border-top: none;
+                    height: 0.933333rem;
+                    margin-top: 0.666667rem;
+                    padding: 0;
+                    button {
+                        width: 45%;
+                        height: 0.933333rem;
+                        border: 1px solid #e53939;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        color: #e53939;
+                        font-size: 0.426667rem;
+                        outline: none;
+                    }
+                    .redBtn {
+                        margin-left: 0.333333rem;
+                    }
+                }
+            }
+        }
+    }
+}

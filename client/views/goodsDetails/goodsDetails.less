@@ -1,0 +1,281 @@
+    /*body{
+    background: url(/login/goods.jpg);
+    background-position-y:-128px;
+}
+*/
+    
+    #goodsDetails {
+        width: 10.0rem;
+        padding-bottom:1.4rem;
+        /*商品名称以及返回按钮*/
+        .goodsNameArea {
+            width: 100%;
+            height: 1.866667rem;
+            border-bottom: 2px solid #ddd;
+            background-color: #fff;
+            .innerContainer {
+                width: 95%;
+                margin: 0 auto;
+                padding-top: 0.2rem;
+                button {
+                    width: 100%;
+                    height: 1.4rem;
+                    background: url(/redBtn.png) no-repeat center;
+                    background-size: 100%;
+                    color: #fff;
+                    font-size: 0.506667rem;
+                    border: none;
+                    outline: none;
+                    p {
+                        width: 75%;
+                        margin: 0 auto;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+        /*商品概要区域*/
+        .goodsSummaryContainer {
+            width: 100%;
+            max-height: 12.866667rem;
+            background-color: #fff;
+            overflow: auto;
+            /*商品图片滚播*/
+            /*.goodsPicsArea{
+            width: 100%;
+            height: 10.026667rem;
+            border-bottom: 2px solid #ddd;
+            .swiper-pagination-bullet{
+                width: 0.2rem;
+                height: 0.2rem;
+            }
+            .swiper-pagination-bullet-active{
+                background: #e53939;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }*/
+            .goodsPicsArea {
+                width: 90%;
+                height: 9rem;
+                border-bottom: 2px solid #ddd;
+                margin: 0 auto;
+                .swiper-pagination-bullet {
+                    width: 0.2rem;
+                    height: 0.2rem;
+                }
+                .swiper-pagination-bullet-active {
+                    background: #e53939;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            /*商品名称*/
+            .goodsNameAndPrice {
+                width: 90%;
+                margin: 0 auto;
+                border-bottom: 2px solid #ccc;
+                h3 {
+                    width: 95%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 0.48rem;
+                    line-height: 1.266667rem;
+                }
+                p {
+                    font-size: 0.293333rem;
+                    margin: 0.333333rem 0 0.266667rem;
+                    span {
+                        color: #C32A2A;
+                        font-size: 0.773333rem;
+                    }
+                }
+            }
+            /*商品规格说明*/
+            .goodsSummaryArea {
+                width: 90%;
+                padding-top: 0.373333rem;
+                margin: 0 auto;
+                .goodsInfo {
+                    width: 100%;
+                    height: 0.706667rem;
+                    .goodsInfoLeft {
+                        float: left;
+                        width: 40%;
+                        p {
+                            font-size: 0.373333rem;
+                            color: #bdbdbd;
+                        }
+                    }
+                    .goodsInfoRight {
+                        float: left;
+                        /*width: 60%;*/
+                        p {
+                            font-size: 0.373333rem;
+                            color: #999;
+                        }
+                    }
+                    .showPicBtn {
+                        float: right;
+                        .button {
+                            border: 1px solid #ddd;
+                            padding: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        /*购买 && 加入购物车按钮*/
+        .operationBtn {
+            position: fixed;
+            bottom: 0;
+            width: 10.0rem;
+            border-top: 2px solid #ddd;
+            background-color: #fff;
+            text-align: center;
+            padding: 0.2rem;
+            button {
+                width: 45%;
+                height: 0.933333rem;
+                border: 1px solid #e53939;
+                border-radius: 5px;
+                background-color: #fff;
+                color: #e53939;
+                font-size: 0.426667rem;
+                outline: none;
+            }
+            .redBtn {
+                margin-left: 0.333333rem;
+                background-color: #e53939;
+                color: #fff;
+            }
+        }
+        /*弹出框*/
+        .coverContainer {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            .successAlert {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: 7.466667rem;
+                height: 5.333333rem;
+                border-radius: 5px;
+                background-color: #fff;
+                .innerArea {
+                    width: 80%;
+                    height: 80%;
+                    margin: 7% auto;
+                    p {
+                        margin-bottom: 0.4rem;
+                        text-align: center;
+                        line-height: 0.533333rem;
+                        font-size: 0.426667rem;
+                    }
+                    .alertOperationBtn {
+                        position: relative;
+                        border-top: none;
+                        height: 0.933333rem;
+                        /*margin-top: 0.666667rem;*/
+                        padding: 0;
+                        width: 6.5rem;
+                        button {
+                            /*width: 45%;*/
+                            width: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .pictureContainer {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            .successAlert {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                width: 6.466667rem;
+                height: 7.466667rem;
+                border-radius: 5px;
+                background-color: #fff;
+                .innerArea {
+                    width: 100%;
+                    height: 100%;
+                    .button {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: 0.466667rem;
+                    }
+                    .imgShow {
+                        width: 100%;
+                        height: 100%;
+                        .text {
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            font-size: 1.0rem;
+                            margin-top: 45%;
+                        }
+                        img {
+                            width: 43%;
+                            height: 43%;
+                            float: left;
+                            margin: 15px 10px;
+                        }
+                    }
+                    /*img{
+                    width:43%;
+                    height:43%;
+                    float:left;
+                    margin:15px 10px;
+
+                    
+                }*/
+                    /* .goodsPicsArea {
+                        width: 90%;
+                        height: 80%;
+                        border-bottom: 2px solid #ddd;
+                        margin-top:0.533333rem;
+                        .swiper-pagination-bullet {
+                            width: 0.2rem;
+                            height: 0.2rem;
+                        }
+                        .swiper-pagination-bullet-active {
+                            background: #e53939;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }*/
+                }
+            }
+        }
+    }

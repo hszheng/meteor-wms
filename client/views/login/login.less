@@ -1,0 +1,204 @@
+#loginContainer {
+    width: 10.0rem;
+    background: #fff;
+    padding-top:0.6rem;
+    /*表单提交区域*/
+    .loginFormArea {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0.6rem;
+        color: #999;
+        .commonWidthArea {
+            width: 100%;
+            height: 1rem;
+            margin-bottom: 0.35rem;
+            input {
+                width: 100%;
+                height: 1rem;
+                background: #f7f7f7;
+                border: 1px solid #ddd;
+                border-radius: 0.12rem;
+                font-size: 0.4rem;
+                font-weight: bold;
+                padding-left: 0.3rem;
+                outline: none;
+                cursor: pointer;
+            }
+            .error {
+                border: 1px solid #e53939;
+                border-radius: 0.125rem;
+            }
+        }
+    }
+    /*按钮区域*/
+    .operationBtn {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.64rem;
+        .commonBtn {
+            float: left;
+            width: 48%;
+            height: 0.95rem;
+            background-color: #fff;
+            text-align: center;
+            border: 1px solid #e53939;
+            border-radius: 0.12rem;
+            cursor: pointer;
+            span {
+                color: #e53939;
+                font-size: 0.5rem;
+                line-height: 1.8;
+            }
+        }
+        .commonLoginBtn {
+            float: left;
+            width: 48%;
+            height: 0.95rem;
+            background-color: #e53939;
+            text-align: center;
+            border: 1px solid #e53939;
+            border-radius: 0.12rem;
+            cursor: pointer;
+            span {
+                color: #fff;
+                font-size: 0.5rem;
+                line-height: 1.8;
+            }
+        }
+        .login {
+            margin-left: 4%;
+        }
+        .forgetPassword {
+            font-size: 0.4rem;
+            width: 100%;
+            text-align: right;
+            color: #e53939;
+            margin-top: 0.266667rem;
+        }
+    }
+    /*弹出框*/
+    .forgetPasswordContainer {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        .successAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 7.466667rem;
+            height: 6.033333rem;
+            border-radius: 5px;
+            background-color: #fff;
+            .innerArea {
+                width: 85%;
+                height: 100%;
+                margin: 7% auto;
+                p {
+                    margin-bottom: 0.4rem;
+                    text-align: center;
+                    line-height: 0.533333rem;
+                    font-size: 0.426667rem;
+                }
+                .phoneArea {
+                    width: 100%;
+                    input {
+                        width: 100%;
+                        height: 1rem;
+                        background: #f7f7f7;
+                        border: 1px solid #ddd;
+                        border-radius: 0.12rem;
+                        font-size: 0.4rem;
+                        font-weight: bold;
+                        padding-left: 0.3rem;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    p {
+                        font-size: 0.266667rem;
+                        color: #e53939;
+                        text-align: left;
+                        margin-bottom: 0.133333rem;
+                        visibility:hidden;
+                    }
+                }
+                .identifyArea {
+                    width: 100%;
+                    input {
+                        width: 100%;
+                        height: 1rem;
+                        background: #f7f7f7;
+                        border: 1px solid #ddd;
+                        border-radius: 0.12rem;
+                        font-size: 0.4rem;
+                        font-weight: bold;
+                        padding-left: 0.3rem;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    .identifyInput {
+                        width: 60%;
+                        float: left;
+                    }
+                    .identifyBtn {
+                        width: 35%;
+                        float: right;
+                        line-height: 1rem;
+                        height: 1rem;
+                        font-size: 0.4rem;
+                        color: #e53939;
+                        border: 1px solid #e53939;
+                        text-align: center;
+                        border-radius: 0.12rem;
+                        cursor: pointer;
+                    }
+
+                }
+                .forgetPasswordBtnArea {
+                    width: 100%;
+                   /* margin-top: 0.533333rem;*/
+                    .cancel {
+                        width: 45%;
+                        height: 0.933333rem;
+                        float: left;
+                        margin-top: 0.4rem;
+                        width: 2.466667rem;
+                        height: 0.933333rem;
+                        line-height: 0.933333rem;
+                        background-color: #fff;
+                        font-size: 0.4rem;
+                        color: #e53939;
+                        border: 0.025rem solid #e53939;
+                        text-align: center;
+                        border-radius: 0.12rem;
+                        cursor: pointer;
+                    }
+                    .ensure {
+                        width: 45%;
+                        height: 0.933333rem;
+                        float: right;
+                        margin-top: 0.4rem;
+                        width: 2.466667rem;
+                        height: 0.933333rem;
+                        line-height: 0.933333rem;
+                        background-color: #e53939;
+                        font-size: 0.4rem;
+                        color: #fff;
+                        border: 0.025rem solid #e53939;
+                        text-align: center;
+                        border-radius: 0.12rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}

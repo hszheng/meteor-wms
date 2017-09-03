@@ -1,0 +1,37 @@
+<template name="editPersonalPage">
+    <div id="editPersonalContainer">
+        <div class="editPersonalBar">
+            <div class="editPersonalImage">
+                <img src="/personal/leftArrowWhite.png">
+            </div>
+            修改密码
+        </div>
+        <div class="editPersonalPortrait updateNew">
+            <span><img src="/personal/protrait.png" id="personalPortrait"></span> 
+            <input type="file" id="updateNewImgBtn">
+            {{> upload_bootstrap callbacks=uploadCallback }}
+        </div>
+        <div class="editPersonalFormArea">
+            <div class="commonWidthArea username">
+                <input type="text" disabled="true">
+            </div>
+            <div class="commonWidthArea editPassword">
+                <input type="password" placeholder='修改密码' onkeyup="this.value=this.value.replace(/^ +| +$/g,'')">
+            </div>
+            <div class="commonWidthArea ensurePassword">
+                <input type="password" placeholder='确认密码' onkeyup="this.value=this.value.replace(/^ +| +$/g,'')">
+            </div>
+            <div class="commonWidthArea phone">
+                <input type="number" disabled="true">
+            </div>
+            <div class="commonWidthArea">
+                <input type="text" class="identifyInput" placeholder='手机验证码'>
+                <a class="identifyBtn">发送验证码</a>
+            </div>
+        </div>
+        <div class="optionBtnGroup">
+            <div class="editPersonalSaveBtn">保存</div>
+            <div class="editPersonalCancelBtn">取消</div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,28 @@
+<template name='pcMyUploading'>
+	<div id="pcMyUploading">
+		<!-- 上传按钮 -->
+		<div class="uploadingBtnArea">
+			<div class="redBtn">
+				<button class="submitUploading">上传产品</button>
+				<button class="batchUpload">批量上传</button>
+			</div>
+		</div>
+
+		<!-- 上传作品展示 -->
+		<div class="productions"></div>
+
+		<!-- 删除提示弹出框 -->
+		<div class="coverContainer" id="deleteAlert">
+			<div class="successAlert">
+				<div class="innerArea">
+					<p><img src="/makeSure.png" alt=""></p>
+					<p>是否删除该产品?</p>
+					<div class="alertOperationBtn operationBtn">
+						<button id="cancleSave">取消</button>
+						<button class="redBtn" id="save">删除</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

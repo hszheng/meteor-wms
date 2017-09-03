@@ -1,0 +1,35 @@
+<template name="myContract">
+    <div class="contractList">
+        <div class="withdraw">我的合同</div>
+        <div class="contractContainer">
+            <div class="myContractList"></div>
+        </div>
+    </div>
+    <div class="contractSettlementArea">
+        <div class="selectAll" id="contractSelectAllBtn">
+            <button class="cycleCheckBtn" value='true'><img src="/select.png" alt="选择图标"></button>
+            <span>全选</span>
+            <div class="clear"></div>
+        </div>
+        <div class="totalPrice">
+            <span>合计：<i id='contractTotalPrice'></i></span>
+            <button id="contractDeleteBtn">删除( <b id='contractDeleteProductNum'></b> )</button>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+     <!-- 删除提示弹出框 -->
+        <div class="myContractContainer" id="contractDeleteAlert">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p><img src="/makeSure.png" alt="购物车按钮"></p>
+                    <p>是否删除该合同</p>
+                    <div class="alertOperationBtn operationBtn">
+                        <button id="cancleContractDelete">取消</button>
+                        <button class="redBtn" id="ensureContractDelete">删除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</template>

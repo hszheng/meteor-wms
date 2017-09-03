@@ -1,0 +1,39 @@
+<template name="memberUpdatePage">
+    <div id="memberContainer">
+        <!-- 返回按钮 -->
+        <div class="redBtnArea">
+            <div class="redBtn">
+                <button class="redBtnSubmit">升级会员</button>
+            </div>
+        </div>
+        <!--会员说明-->
+        <div class="memberText">
+            <a>会员说明</a>
+            <p>注册会员、未通过审核的会员不显示价格，只显示库存数量；</p>
+            <p>通过审核的普通会员，由后台确定是否显示价格，如果显示价格，则显示区间价格；</p>
+            <p>vip会员可以显示每个型号的库存数量和价格。</p>
+        </div>
+        <div class="memberList">
+            <div class="memberItem ordinaryItem">
+                <p>普通会员<span>10</span>元/月
+                    <button class="cycleCheckBtn ordinaryMember" ><img data-id="10" src="select.png"></button>
+                </p>
+            </div>
+            <div class="memberItem vipItem">
+                <p>VIP会员<span class="memberVipText">50</span>元/月
+                    <button class="cycleCheckBtn vipMember"><img data-id="50" src="select.png"></button>
+                </p>
+            </div>
+            <div class="memberItem superItem">
+                <p>超级会员<span>100</span>元/月
+                    <button class="cycleCheckBtn superMember"><img data-id="100" src="select.png"></button>
+                </p>
+            </div>
+        </div>
+        <div class="memberAgree">
+            <button class="cycleCheckBtn"><img src="select.png"></button>
+            <p>我已经认真阅读<span>会员说明</span>,并同意遵守条款</p>
+        </div>
+        <div class="memberBtn">升级会员</div>
+    </div>
+</template>

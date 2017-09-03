@@ -1,0 +1,340 @@
+<template name='uploadingPage'>
+    <div id="uploadingPage">
+        <!-- 顶部按钮 -->
+        <div class="topMenuArea">
+            <button class="editProduction"><img src="/personal/leftArrowWhite.png">上传产品</button>
+        </div>
+        <!-- 产品信息填写区域 -->
+        <div class="productionInfo">
+            <!-- 产品信息 -->
+            <div class="productionDetails">
+                <h3 class="productionInfoH3">
+                    产品信息<span>(*号为必填)</span>
+                </h3>
+                <div class="commonInputArea" id="specification">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <input type="text" placeholder='规格型号'>
+                    <div class="clear"></div>
+                </div>
+                <div class="commonInputArea" id="productionName">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <input type="text" placeholder='产品名称'>
+                    <div class="clear"></div>
+                </div>
+                <!-- 单位 -->
+                <div class="commonInputArea">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea unitsLists">
+                        <div class="commonLeftArea">
+                            <p>单位</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="units redBtn">
+                                <p>个</p>
+                            </div>
+                            <div class="units">
+                                <p>台</p>
+                            </div>
+                            <div class="units">
+                                <p>包</p>
+                            </div>
+                            <div class="units">
+                                <p>米</p>
+                            </div>
+                            <div class="units">
+                                <p>PCS</p>
+                            </div>
+                            <div class="units">
+                                <p>其他</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 单位 end -->
+                <div class="commonInputArea chooseUnits" id="storeNum">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <input type="text" placeholder='库存数量'>
+                    <div class="clear"></div>
+                </div>
+                 <div class="commonInputArea" id="price">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <input type="text" placeholder='价格/元'>
+                    <div class="clear"></div>
+                </div>
+               
+                <!-- 产品类别 -->
+                <div class="commonInputArea commonChooseContainer selectorContainer">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">产品类别</p>
+                        </div>
+                        <div class="commonRightArea" id="categories">
+                            <div class="selectArea" id="productCategories">
+                                <div class="currentSelectItem" data-num='0'>
+                                    <input type="text" value="" readonly="readonly">
+                                    <span class='close'></span>
+                                    <div class="clear"></div>
+                                </div>
+                                <ul id="optionsItem"></ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 产品类别 end -->
+                <!-- 品牌 -->
+                <div class="commonInputArea commonChooseContainer selectorContainer">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">制造厂商/品牌</p>
+                        </div>
+                        <div class="commonRightArea" id="productBrandIndex">
+                            <div class="selectArea" id="brand">
+                                <div class="currentSelectItem" data-num='0'>
+                                    <input type="text" value="" readonly="readonly">
+                                    <span class='close'></span>
+                                    <div class="clear"></div>
+                                </div>
+                                <ul id="optionsItem"></ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 品牌end -->
+                 <div class="commonInputArea commonChooseContainer inventory selectorContainer">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">库存类别</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="selectArea">
+                                <div class="currentSelectItem" data-num='1'>
+                                    <input type="text" value="原装正品" readonly="readonly">
+                                    <span class='close'></span>
+                                    <div class="clear"></div>
+                                </div>
+                                <ul id="optionsItem">
+                                    <li>
+                                        <p>原装正品</p>
+                                    </li>
+                                    <li>
+                                        <p>原装开包</p>
+                                    </li>
+                                    <li>
+                                        <p>待定</p>
+                                    </li>
+                                    <li>
+                                        <p>其他</p>
+                                    </li>
+                                    <li>
+                                        <p>特定产品</p>
+                                    </li>
+                                    <li>
+                                        <p>迅创为仓库</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 是否含税 -->
+                <div class="commonInputArea commonChooseContainer isRevenue">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">是否含税</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="units yesOrNO redBtn">
+                                <p data-state='true'>是</p>
+                            </div>
+                            <div class="units yesOrNO">
+                                <p data-state='false'>否</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 是否含税 end-->
+                <!-- 批量购买优惠 -->
+                <div class="commonInputArea commonChooseContainer buyInBulk">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">批量购购买优惠</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="units yesOrNO redBtn">
+                                <p data-state='true'>是</p>
+                            </div>
+                            <div class="units yesOrNO">
+                                <p data-state='false'>否</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 批量购买优惠 end-->
+                <!-- 是否提供发票 -->
+                <!-- <div class="commonInputArea commonChooseContainer hasBill">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">能否提供发票</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="units yesOrNO redBtn">
+                                <p data-state='true'>能</p>
+                            </div>
+                            <div class="units yesOrNO">
+                                <p data-state='false'>否</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div> -->
+                <!-- 是否提供发票 end-->
+                <div class="commonInputArea" id="productId">
+                    <div class="leftIcon">
+                        <i class="redI"></i>
+                    </div>
+                    <input type="text" placeholder='产品序列号（使用，隔开多个序列号）'>
+                    <div class="clear"></div>
+                </div>
+                <div class="commonInputArea" id="years">
+                    <div class="leftIcon">
+                        <i class="redI"></i>
+                    </div>
+                    <input type="text" placeholder='年限说明'>
+                    <div class="clear"></div>
+                </div>
+                <!-- 产品状态说明 -->
+                <div class="commonInputArea commonChooseContainer stateInfo threeChooseItem">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">产品状态说明</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="units stateType redBtn">
+                                <p>正品</p>
+                            </div>
+                            <div class="units stateType">
+                                <p>备件</p>
+                            </div>
+                            <div class="units stateType">
+                                <p>其他</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 产品状态说明 end-->
+                <div class="commonInputArea" id="substituteModel">
+                    <div class="leftIcon">
+                        <i class="redI"></i>
+                    </div>
+                    <input type="text" placeholder='代替型号'>
+                    <div class="clear"></div>
+                </div>
+                <!-- 待销售状况 -->
+                <div class="commonInputArea commonChooseContainer sellCondition threeChooseItem">
+                    <div class="leftIcon">
+                        <i class="redI">*</i>
+                    </div>
+                    <div class="commonChooseArea favorable">
+                        <div class="commonLeftArea">
+                            <p class="fontSize23">待销售状况</p>
+                        </div>
+                        <div class="commonRightArea">
+                            <div class="units stateType redBtn">
+                                <p>急于出手</p>
+                            </div>
+                            <div class="units stateType">
+                                <p>特价</p>
+                            </div>
+                            <div class="units stateType">
+                                <p>常规库存</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 待销售状况 end-->
+            </div>
+             <!-- 产品图片添加 -->
+            <div class="addPic">
+                <h3 class="productionInfoH3">产品图片<span>(不多于4张)</span></h3>
+                <div class="imgLists">
+                    <div class="addNew commonImgArea">
+                        <span>
+                            <img src="/productions/addImg.png" alt="添加产品图片">
+                        </span>
+                        <input type="file" id="addNewImgBtn"> {{> upload_bootstrap callbacks=uploadCallback }}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- 上传按钮区域 -->
+            <div class="submitProductionInfoBtn">
+                <button class="editProduction submitBtn">上传</button>
+            </div>
+        </div>
+        <div class="uploadTipContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p><img src="/makeSure.png" alt="购物车按钮"></p>
+                    <p id="contractIsTipText">是否确定上传相同型号的商品？</p>
+                    <div class="alertOperationBtn operationBtn">
+                        <button id="cancleContrctTip">取消</button>
+                        <button class="redBtn" id="saveContractTip">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

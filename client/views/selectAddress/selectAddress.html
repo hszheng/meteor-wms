@@ -1,0 +1,27 @@
+<template name="selectAddress">
+	<div class="selectShippingAdd ">
+		<div class="withdraw">选择收货地址</div>
+		<div id="Mount">		    
+		</div>
+		<div class="newAddress">
+			<div class="freshAddress">+&nbsp;新建收货地址</div>
+		</div>
+	</div>
+</template>
+<template name="tplDeliveryInfo">
+   {{#each $mapped addressList}}
+<!--        {{#if $first}}
+            <div class="deliveryInfo selected">       
+                <div class="user"><span class="name">{{receiver}}</span><span class="phone">{{contactPhone}}</span></div>
+                <div class="address">{{area}}{{address}}</div>
+                <img class="electoral" src="/purchaseContract/elect1.png" />
+            </div>         
+           {{else}} -->
+            <div class="deliveryInfo">       
+                <div class="user"><span class="name">{{receiver}}</span><span class="phone">{{contactPhone}}</span></div>
+                <div class="address">{{area}}{{address}}</div>
+                <img class="electoral" src="/purchaseContract/elect2.png" />
+            </div>            
+      <!-- {{/if}} -->
+ {{/each}}
+</template>

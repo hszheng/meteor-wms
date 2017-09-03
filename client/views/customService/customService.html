@@ -1,0 +1,41 @@
+<Template name="customService">
+    <style>
+    html,
+    body,
+    #__blaze-root {
+        height: 100%;
+        width: 100%;
+    }
+    </style>
+    <div class="customService">
+        <div class="headText">
+            <!-- <p>请联系客服 电话：<a href="tel:13312345678">13312345678</a></p> -->
+            <p>您好，这里是深圳迅创为公司，请问有什么可以帮到您？如果您希望尽快得到服务请拨打：</p>
+        </div>
+        <div class="page-content messages-content" id="mainRegion">
+            <!-- messages -->
+            <div class="messages" id="messaages">
+                {{#each $mapped messages}} {{>tpl_messages}} {{/each}}
+            </div>
+            <!-- end-Messages -->
+            <div class="toolbar messagebar">
+                <div class="toolbar-inner">
+                </div>
+            </div>
+        </div>
+        <div class="sendMessage">
+            <span contenteditable="true"></span>
+            <a href="#" class="link">发送</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+</Template>
+<Template name="tpl_messages">
+    <!-- 按时间间隔显示时间 -->
+    {{#if isShow}}
+    <div class="messages-date"><span>{{time}}</span></div>
+    {{/if}}
+    <div class="message message-with-avatar {{#if source}}message-received{{else}}message-sent{{/if}}">
+        <div class="message-text">{{content}}</div>
+    </div>
+</Template>

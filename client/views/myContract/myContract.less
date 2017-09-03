@@ -1,0 +1,287 @@
+.contractList {
+    width: 10.0rem;
+    height: auto;
+    padding-top: 0.4rem;
+    overflow: hidden;
+    background-color: #ededed;
+    padding-bottom: 2.533333rem;
+    /*background-image: url(/myContract/back.jpg);*/
+    .withdraw {
+        position: relative;
+        background-image: url(/redBtn.png);
+        background-size: 9.466667rem 1.4rem;
+        width: 9.466667rem;
+        height: 1.413333rem;
+        margin: 0.213333rem auto;
+        border-radius: 0.16rem;
+        text-align: center;
+        color: #fff;
+        font-size: 0.493333rem;
+        line-height: 1.4rem;
+        margin-bottom: 0.4rem;
+    }
+    .contractContainer {
+        width: 100%;
+        height: 12.77rem;
+        overflow-y: scroll;
+        .myCheck {
+            width: 10.0rem;
+            margin: auto;
+            position: relative;
+            /* min-height: 3.48rem;*/
+            border-bottom: 2px solid #bdbdbd;
+            overflow: hidden;
+            margin-bottom: 0.24rem;
+            background-color: #fff;
+            padding-bottom: 0.1rem;
+            .production {
+                float: left;
+                width: 2.666667rem;
+                height: 2.666667rem;
+                margin-left: 0.52rem;
+                margin-top: 0.36rem;
+                width: 2.666667rem;
+                height: 2.666667rem;
+            }
+            .productInfo {
+                width: 100%;
+                margin-bottom: 0.133333rem;
+                .frameLeft {
+                    width: 5%;
+                    float: left;
+                    margin-top: 0.433333rem;
+                    .selectAll {
+                        float: left;
+                        width: 20%;
+                        height: 100%;
+                        text-align: center;
+                        padding: 0.466667rem 0 0 0.466667rem;
+                        .cycleCheckBtn {
+                            float: left;
+                            width: 0.466667rem;
+                            height: 0.466667rem;
+                            border: 1px solid #ddd;
+                            border-radius: 50%;
+                            font-size: 0.373333rem;
+                            background-color: #fff;
+                            padding: 0;
+                            outline: none;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                visibility: hidden;
+                            }
+                        }
+                        span {
+                            float: left;
+                            font-size: 0.373333rem;
+                            margin-left: 0.133333rem;
+                        }
+                    }
+                }
+                .frameRight {
+                    width: 90%;
+                    float: right;
+                    .firstLine {
+                        width: 100%;
+                        /*margin-top: 0.373333rem;*/
+                        .model {
+                            font-size: 0.373333rem;
+                            color: #333;
+                            margin-left: 0.253333rem;
+                            float: left;
+                        }
+                        .unitPrice {
+                            display: block;
+                            font-size: 0.426667rem;
+                            float: right;
+                            margin-right: 0.333333rem;
+                            color: #333333;
+                            .quantity {
+                                color: #999999;
+                            }
+                        }
+                    }
+                    .secondLine {
+                        width: 100%;
+                        /*margin-top: 0.133333rem;*/
+                        .specification {
+                            color: #999;
+                            margin-top: 0.133333rem;
+                            margin-left: 0.253333rem;
+                            width: 5.866667rem;
+                            font-size: 0.32rem;
+                        }
+                        .firm {
+                            color: #999;
+                            font-size: 0.32rem;
+                            margin-left: 0.253333rem;
+                            margin-top: 0.08rem;
+                            width: 5.866667rem;
+                        }
+                    }
+                    .thirdLine {
+                        width: 100%;
+                        /*margin-top: 0.133333rem;*/
+                        .thirdLeft {
+                            width: 80%;
+                            float: left;
+                            .format {
+                                display: block;
+                                font-size: 0.32rem;
+                                color: #999;
+                                margin-top: 0.066667rem;
+                                margin-left: 0.253333rem;
+                                width: 5.866667rem;
+                            }
+                            .express {
+                                display: block;
+                                font-size: 0.32rem;
+                                color: #999;
+                                margin-top: 0.066667rem;
+                                margin-left: 0.253333rem;
+                                width: 100%;
+                                line-height: 1.2;
+                            }
+                        }
+                        .ifThrough {
+                            color: #e53939;
+                            font-size: 0.373333rem;
+                            float: right;
+                            margin-right: 0.333333rem;
+                            margin-top: 0.133333rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contractSettlementArea {
+    position: fixed;
+    bottom: 1.266667rem;
+    width: 10.0rem;
+    height: 1.306667rem;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+    .selectAll {
+        float: left;
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        padding: 0.466667rem 0 0 0.466667rem;
+        .cycleCheckBtn {
+            float: left;
+            width: 0.466667rem;
+            height: 0.466667rem;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            font-size: 0.373333rem;
+            background-color: #fff;
+            padding: 0;
+            outline: none;
+            img {
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+            }
+        }
+        span {
+            float: left;
+            font-size: 0.373333rem;
+            margin-left: 0.133333rem;
+        }
+    }
+    /*合计*/
+    .totalPrice {
+        float: left;
+        width: 80%;
+        height: 100%;
+        span {
+            float: left;
+            line-height: 1.306667rem;
+            font-size: 0.426667rem;
+            margin: 0 0.133333rem 0 0.126667rem;
+            i {
+                color: #e53939;
+                font-style: normal;
+            }
+        }
+        button {
+            float: right;
+            margin: 0.16667rem 0.2rem 0 0;
+            width: 2.566667rem;
+            height: 0.933333rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.426667rem;
+            background-color: #e53939;
+            color: #fff;
+        }
+        #deleteBtn {
+            background-color: #fff;
+            border: 1px solid #e53939;
+            color: #e53939;
+        }
+    }
+}
+
+
+/*弹出框*/
+
+.myContractContainer {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 103;
+    .successAlert {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 7.466667rem;
+        height: 5.333333rem;
+        border-radius: 5px;
+        background-color: #fff;
+        .innerArea {
+            width: 65%;
+            height: 80%;
+            margin: 7% auto;
+            p {
+                margin-bottom: 0.4rem;
+                text-align: center;
+                line-height: 0.533333rem;
+                font-size: 0.426667rem;
+            }
+            .alertOperationBtn {
+                position: relative;
+                border-top: none;
+                height: 0.933333rem;
+                margin-top: 0.666667rem;
+                padding: 0;
+                button {
+                    width: 45%;
+                    height: 0.933333rem;
+                    border: 1px solid #e53939;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    color: #e53939;
+                    font-size: 0.426667rem;
+                    outline: none;
+                }
+                .redBtn {
+                    background-color: #e53939;
+                    color: #fff !important;
+                    margin-left: 0.333333rem;
+                }
+            }
+        }
+    }
+}

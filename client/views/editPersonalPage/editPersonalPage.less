@@ -1,0 +1,153 @@
+/*表单提交区域*/
+
+#editPersonalContainer {
+    width: 10.0rem;
+    height:auto;
+    padding-top: 0.266667rem;
+    background-color: white;
+    .editPersonalBar {
+        width: 95%;
+        margin: 0 auto;
+        height: 1.333333rem;
+        line-height: 1.333333rem;
+        background-color: #e53939;
+        font-size: 0.466667rem;
+        color: #fff;
+        border: 0.025rem solid #e53939;
+        text-align: center;
+        border-radius: 0.12rem;
+        img {
+            float: left;
+            height: 0.466667rem;
+            margin-left: 0.533333rem;
+            margin-top: 0.4rem;
+            width: 0.266667rem;
+            height: 0.466667rem;
+        }
+    }
+    .editPersonalPortrait {
+        width: 2.0rem;
+        height: 2.0rem;
+        margin: 0.4rem auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        img {
+            width: 1.946667rem;
+            height: 1.946667rem;
+        }
+    }
+    .updateNew {
+        position: relative;
+        #updateNewImgBtn {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        form {
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            .uploadPanel {
+                width: 100%;
+                height: 100%;
+                display: block;
+                .upload-control {
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    display: block;
+                    .jqUploadclass {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .editPersonalFormArea {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0.6rem;
+        color: #999;
+        .phone.commonWidthArea {
+            display: none;
+        }
+        .commonWidthArea {
+            width: 100%;
+            height: 1rem;
+            margin-bottom: 0.35rem;
+            input {
+                width: 100%;
+                height: 1rem;
+                background: #f7f7f7;
+                border: 1px solid #ddd;
+                border-radius: 0.12rem;
+                font-size: 0.4rem;
+                font-weight: bold;
+                padding-left: 0.3rem;
+                outline: none;
+                cursor: pointer;
+            }
+            .error {
+                border: 1px solid #e53939;
+                border-radius: 0.125rem;
+            }
+            .identifyInput {
+                width: 60%;
+                float: left;
+            }
+            .identifyBtn {
+                width: 35%;
+                float: right;
+                line-height: 1rem;
+                height: 1rem;
+                font-size: 0.4rem;
+                color: #e53939;
+                border: 1px solid #e53939;
+                text-align: center;
+                border-radius: 0.12rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .optionBtnGroup {
+        width: 90%;
+        margin: 0 auto;
+        .editPersonalSaveBtn {
+            margin-top: 0.4rem;
+            width: 100%;
+            line-height: 1rem;
+            height: 1rem;
+            background-color: #e53939;
+            font-size: 0.4rem;
+            color: #fff;
+            border: 1px solid #e53939;
+            text-align: center;
+            border-radius: 0.12rem;
+            cursor: pointer;
+        }
+        .editPersonalCancelBtn {
+            margin-top: 0.4rem;
+            width: 100%;
+            line-height: 1rem;
+            height: 1rem;
+            background-color: #fff;
+            font-size: 0.4rem;
+            color: #e53939;
+            border: 1px solid #e53939;
+            text-align: center;
+            border-radius: 0.12rem;
+            cursor: pointer;
+        }
+    }
+}

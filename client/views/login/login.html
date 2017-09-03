@@ -1,0 +1,45 @@
+<template name="login">
+    <div id="loginContainer">
+        <div class="loginFormArea">
+            <div class="commonWidthArea username">
+                <input type="text" placeholder='手机号码'>
+            </div>
+            <div class="commonWidthArea password">
+                <input type="password" placeholder='密码'>
+            </div>
+        </div>
+        <!-- 操作按钮组 -->
+        <div class="operationBtn">
+            <div class="register commonBtn">
+                <span>注册</span>
+            </div>
+            <div class="login commonLoginBtn">
+                <span>登录</span>
+            </div>
+            <div class="clear"></div>
+            <div class="forgetPassword"> 忘记密码？</div>
+        </div>
+        <!-- 忘记密码提示弹出框 -->
+        <div class="forgetPasswordContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p>找回密码</p>
+                    <div class="phoneArea">
+                        <input type="text" placeholder="手机号">
+                        <p>您输入的账号不存在，请重新输入</p>
+                    </div>
+                    <div class="identifyArea">
+                        <input type="text" class="identifyInput" placeholder='手机验证码'>
+                        <a class="identifyBtn">发送验证码</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="forgetPasswordBtnArea">
+                        <button class="cancel">取消</button>
+                        <button class="ensure">确定</button>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

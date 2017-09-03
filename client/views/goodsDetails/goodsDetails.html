@@ -1,0 +1,146 @@
+<template name='goodsDetails'>
+    <div id="goodsDetails">
+        <!-- 商品名称以及返回按钮 -->
+        <div class="goodsNameArea">
+            <div class="innerContainer">
+                <button>
+                    <p id="productTitleName"></p>
+                </button>
+            </div>
+        </div>
+        <!-- 商品详情 -->
+        <div class="goodsSummaryContainer">
+            <div class="goodsNameAndPrice">
+                <h3 id="productName"></h3>
+                <p>￥<span class="redI" id='price'></span></p>
+            </div>
+            <div class="goodsSummaryArea">
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>规格型号</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="specification"></p>
+                    </div>
+                    <div class="showPicBtn">
+                        <a class="button">显示图片</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>搜索次数</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p><span id="searchTimes"></span>次</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>库存数量</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p><span id="storeNum"></span>件</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>制造厂商/品牌</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="brand"></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>价格</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p>￥<span id='revenue'></span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>批发优惠</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="isDiscount"></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>提供17%增值税发票</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="isInvoice"></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>年限说明</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="year"></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>产品状态</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="productStatus"></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="goodsInfo">
+                    <div class="goodsInfoLeft">
+                        <p>代替型号</p>
+                    </div>
+                    <div class="goodsInfoRight">
+                        <p id="substituteModel"></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 加入购物车&&购买 -->
+        <div class="operationBtn" id="bottomOperationArea">
+            <button id="buyNow">立即购买</button>
+            <button class="redBtn addToShopCarBtn">加入购物车</button>
+        </div>
+        <!-- 弹出框 -->
+        <div class="coverContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p><img src="/productions/shopCar.png" alt="购物车按钮"></p>
+                    <p>商品已经成功放入购物车,立即结算?</p>
+                    <div class="alertOperationBtn operationBtn">
+                        <button id="backToScan">继续购物</button>
+                        <button class="redBtn addToShopCar">结算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pictureContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <div class="button">Ｘ</div>
+                    <!-- 商品图片滚播 -->
+                    <!-- <div class="goodsPicsArea swiper-container">
+                        <div class="swiper-wrapper"></div>
+                        <div class="swiper-pagination"></div>
+                    </div> -->
+                    <div class="imgShow">  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

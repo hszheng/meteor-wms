@@ -1,0 +1,69 @@
+<template name='searchResultPage'>
+    <div id="searchResultPage" class="searchAndResultPage">
+        <!-- 顶部搜索框 -->
+        <div class="searchInputArea">
+            <div class="searchText">工控现货仓</div>
+            <div class="searchInputBtnArea">
+                <button class="backBtn"><img src="/leftArrows.png" alt="左箭头"></button>
+                <div class="innerInput">
+                    <button class="searchLogoArea"><img src="/searchBtn.png" alt="搜索图标"></button>
+                    <input type="text" class="search" id="searchKeyWords" placeholder='寻找产品或品牌或型号'>
+                    <div class="clear"></div>
+                    <div class="resultArea" id="searchResultArea"></div>
+                </div>
+                <button class="ensure">搜索</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 排序以及筛选按钮组 -->
+        <div class="sortMenu">
+            <div class="menuListArea">
+                <div class="menu filter">
+                    <button>筛选 <span class='close'><img src="/arrows.png" alt="方向按钮"></span></button>
+                </div>
+                <div class="menu" id="saleAmount">
+                    <!-- <button class="redI">搜索排行</button> -->
+                    <button>搜索排行</button>
+                </div>
+                <div class="menu" id="priceRange">
+                    <button>价格 <span><img src="/price.png" alt="价格筛选" class="price"></span></button>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- 筛选条件展开区域 -->
+            <div class="filtrateArea">
+                <div class="chooseArea" id="screenProduct">
+                    <p class="itemTitle">产品
+                        <span><img src="arrows.png" alt="向下箭头"></span>
+                        <span class="clear"></span>
+                    </p>
+                    <div class="chooseListContainer">
+                        <div class="chooseItemLists">
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseArea" id="screenBrand">
+                    <p class="itemTitle">品牌<span><img src="arrows.png" alt="向下箭头"></span></p>
+                    <div class="chooseListContainer">
+                        <div class="chooseItemLists">
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="optionBtn">
+                    <div class="innerArea">
+                        <div class="resetBtn">重置</div>
+                        <div class="ensureBtn">确定</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="goodsContainer">
+            <div class="goodsLists">
+            </div>
+            <!-- <div class="emptyElement"></div> -->
+        </div>
+    </div>
+</template>

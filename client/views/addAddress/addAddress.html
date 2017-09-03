@@ -1,0 +1,16 @@
+<Template name="addAddress">
+    <div class="contractDetails addAddress">
+        <div class="withdraw" id="returnMyAddress">我的收货地址</div>
+        <div class="supplement">
+            <form id="supplementForm">
+                <input type="text" name="name" placeholder="收货人" id="consignee">
+                <input type="text" name="phone" placeholder="联系电话" id="tel" pattern="\d{3}-\d{4}-\d{4}">
+                <input type="text" placeholder="省市区" id="province">
+                <textarea name="address" placeholder="详细地址" id="detailedAddress"></textarea>
+            </form>
+        </div>     
+        <div class="action">
+            <button type="button" class="button primary">新建</button>
+        </div>  
+    </div>
+</Template>

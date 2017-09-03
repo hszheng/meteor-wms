@@ -1,0 +1,53 @@
+<template name="personalPage">
+    <div id="personalContainer">
+        <div class="personalGroup">
+            <div class="personalPortrait">
+               <img src="/personal/protrait.png" id="portraitImg">
+            </div>
+            <div class="personalInforText">
+                <h3></h3>
+                <p>我的个人信息</p>
+            </div>
+            <div class="personalRight">
+                <img src="/personal/rightArrow.png">
+            </div>
+        </div>
+        <div class="personalList">
+            <div class="personalListItem item1">
+            <h4 class="personalListItemFirst"><span class="personalIdentifyText"></span><span class="identifyTextDate">(2个工作日会完成认证)</span> <img src="/personal/rightArrow.png"></h4>
+            </div>
+            <div class="personalListItem item2">
+                <h3>会员等级:<span class="itemText1">普通</span><span class="itemText2"></span> <img src="/personal/rightArrow.png"></h3>
+            </div>
+            <div class="personalListItem item3">
+                <h3>我的合同<img src="/personal/rightArrow.png"></h3>
+            </div>
+            <div class="personalListItem item4">
+                <h3>我的收货地址<img src="/personal/rightArrow.png"></h3>
+            </div>
+            <div class="personalListItem item5">
+                <h3>我的上传<img src="/personal/rightArrow.png"></h3>
+            </div>
+            <div class="personalListItem item6">
+                <h3>上传产品<img src="/personal/rightArrow.png"></h3>
+            </div>
+            <div class="personalListItem item7">
+                <h3>修改密码<img src="/personal/rightArrow.png"></h3>
+            </div>
+            <div class="personalListItem item8">
+                <h3>退出登录<img src="/personal/rightArrow.png"></h3>
+            </div>
+        </div>
+         <div class="personalAlertContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p>您确定退出当前账号？</p>
+                    <div class="alertOperationBtn operationBtn">
+                        <button id="personalAlertCancle">取消</button>
+                        <button class="redBtn" id="personalAlertSave">确定退出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,460 @@
+.uploadingCommonArea {
+    width: 900px;
+    margin: 25px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /*产品详情页*/
+    .productionInfo {
+        width: 73%;
+        margin: 0 auto;
+        .addPic {
+            width: 100%;
+            height: 310px;
+            padding: 47px 0;
+            /*产品图片区*/
+            .imgLists {
+                width: 100%;
+                height: 159px;
+                margin: 20px 0;
+                .commonImgArea {
+                    float: left;
+                    margin-right: 5px;
+                    width: 24%;
+                    height: 100%;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    text-align: center;
+                    cursor: pointer;
+                    span {
+                        text-align: center;
+                        line-height: 150px;
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .addNew {
+                    position: relative;
+                    #addNewImgBtn {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                    form {
+                        overflow: hidden;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        .uploadPanel {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            .upload-control {
+                                width: 100%;
+                                height: 100%;
+                                padding: 0;
+                                display: block;
+                                .jqUploadclass {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .imgArea {
+                    position: relative;
+                    .cancleThisPic {
+                        position: absolute;
+                        top: -15px;
+                        right: -6px;
+                        width: 30px;
+                        height: 30px;
+                        background: url(/close.png) no-repeat center;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+        /*产品信息*/
+        .productionDetails {
+            width: 100%;
+            margin-top: 13px;
+            /*公共输入框样式*/
+            .commonInputArea {
+                width: 100%;
+                height: 36px;
+                margin-top: 30px;
+                .leftIcon {
+                    float: left;
+                    width: 115px;
+                    height: 100%;
+                    span {
+                        float: left;
+                        line-height: 36px;
+                        font-style: normal;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    i {
+                        float: left;
+                    }
+                }
+                input {
+                    float: right;
+                    width: 540px;
+                    height: 100%;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    background-color: #f7f7f7;
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+                .commonChooseArea {
+                    float: right;
+                    width: 540px;
+                    height: 100%;
+                    .commonLeftArea {
+                        float: left;
+                        height: 100%;
+                        p {
+                            height: 100%;
+                            font-size: 16px;
+                            line-height: 36px;
+                        }
+                    }
+                    .commonRightArea {
+                        float: right;
+                        border-radius: 5px;
+                        border-top: 1px solid #ddd;
+                        border-left: 1px solid #ddd;
+                        margin-right: -1px;
+                        overflow: hidden;
+                        .units {
+                            float: right;
+                            border-bottom: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
+                            background-color: #fff;
+                            p {
+                                height: 100%;
+                                font-size: 16px;
+                                line-height: 36px;
+                                color: #999;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    #categories {
+                        z-index: 2;
+                    }
+                    #productBrandIndex {
+                        z-index: 1;
+                    }
+                }
+            }
+            /*单位选择样式*/
+            .unitsLists {
+                .commonLeftArea {
+                    width: 13%;
+                }
+                .commonRightArea {
+                    /*width: 83%;*/
+                    .units {
+                        width: 90px;
+                        height: 35px;
+                    }
+                }
+            }
+            /*批量购买优惠 & 是否提供发票 &*/
+            .commonChooseContainer {
+                margin-top: 28px;
+                .commonLeftArea {
+                    width: 29%;
+                }
+                .commonRightArea {
+                    float: left !important;
+                    width: 185px;
+                    .yesOrNO {
+                        float: left !important;
+                        width: 50%;
+                    }
+                }
+            }
+            /*是否提供发票*/
+            .hasBill {
+                margin: 30px 0;
+            }
+            /*产品状态说明 & */
+            .threeChooseItem {
+                .commonRightArea {
+                    .stateType {
+                        float: left !important;
+                        width: 180px;
+                    }
+                }
+            }
+            .stateInfo,
+            .sellCondition {
+                .commonRightArea {
+                    width: 543px;
+                    margin: 0;
+                }
+            }
+            /*待销售状况*/
+            .sellCondition {
+                margin-top: 30px;
+            }
+            .buyInBulk {
+                /*margin-top: 76px;*/
+            }
+            /*库存类别*/
+            /*库存类别*/
+            .selectorContainer {
+                position: relative;
+                .commonRightArea {
+                    position: absolute;
+                    top: 0;
+                    left: 120px;
+                    border: 1px solid #ddd;
+                    background-color: #fff;
+                    .selectArea {
+                        width: 90%;
+                        margin: 0 auto;
+                        font-size: 16px;
+                        .currentSelectItem {
+                            input {
+                                float: left;
+                                width: 90%;
+                                height: 35px;
+                                text-align: center;
+                                border: none;
+                                background-color: #fff;
+                            }
+                            span {
+                                float: left;
+                                width: 5%;
+                                height: 35px;
+                                background: url(/arrows.png) no-repeat center;
+                            }
+                            .open {
+                                transform: rotate(0deg);
+                                transition: all .3s ease-in;
+                            }
+                            .close {
+                                transform: rotate(-180deg);
+                                transition: all .3s ease-in;
+                            }
+                        }
+                        ul {
+                            display: none;
+                            width: 100%;
+                            border-top: 1px solid #ddd;
+                            li {
+                                list-style: none;
+                                text-align: center;
+                                p {
+                                    line-height: 36px;
+                                    color: #999;
+                                }
+                                p:hover {
+                                    color: #e53939;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*公共样式*/
+        .productionInfoH3 {
+            font-size: 20px;
+            span {
+                color: #999;
+                font-size: 20px;
+            }
+        }
+        .redI {
+            color: #e53939;
+            font-size: 20px;
+            line-height: 42px;
+            font-weight: bold;
+        }
+        .redBtn {
+            background-color: #e53939 !important;
+            color: #fff !important;
+            p {
+                color: #fff !important;
+            }
+        }
+        .fontSize23 {
+            font-size: 0.36rem !important;
+            line-height: 2.5 !important;
+        }
+    }
+    /*底部按钮*/
+    .submitProductionInfoBtn {
+        height: 40px;
+        margin: 0px 0 50px 0;
+        text-align: left;
+        .editProduction {
+            width: 188px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background: #e53939;
+            background-size: 100%;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            outline: none;
+        }
+       /* .delete {
+            background-color: #fff;
+            color: #e53939;
+            border: 1px solid #e53939;
+            margin-left: 30px;
+        }*/
+        .delete {
+            background-color: #e53939;
+            color: #fff;
+            border: 1px solid #e53939;
+            margin-left: 30px;
+        }
+        .backBtn {
+            float: right;
+            margin-right: 30px;
+        }
+    }
+    /*弹出框*/
+    .coverContainer {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        .successAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 465px;
+            height: 285px;
+            border-radius: 5px;
+            background-color: #fff;
+            .innerArea {
+                width: 405px;
+                height: 230px;
+                margin: 30px auto;
+                p {
+                    margin-bottom: 25px;
+                    text-align: center;
+                    line-height: 25px;
+                    font-size: 20px;
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                .alertOperationBtn {
+                    position: relative;
+                    border-top: none;
+                    width: 405px;
+                    height: 40px;
+                    margin-top: 55px;
+                    padding: 0;
+                    button {
+                        width: 185px;
+                        height: 40px;
+                        border: 1px solid #e53939;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        color: #e53939;
+                        font-size: 20px;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    .redBtn {
+                        background-color: #e53939;
+                        color: #fff !important;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    /*成功提醒*/
+    #success {
+        .innerArea {
+            width: 405px;
+            height: 120px;
+            margin: 90px auto 0;
+        }
+    }
+    .uploadTipContainer {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 3;
+        .successAlert {
+            position: absolute;
+            top: 2rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 8.466667rem;
+            border-radius: 5px;
+            background-color: #fff;
+            .innerArea {
+                width: 80%;
+                height: 80%;
+                margin: 7% auto;
+                p {
+                    margin-bottom: 0.4rem;
+                    text-align: center;
+                    line-height: 0.533333rem;
+                    font-size: 0.426667rem;
+                }
+                .alertOperationBtn {
+                    position: relative;
+                    border-top: none;
+                    height: 0.933333rem;
+                    margin-top: 0.666667rem;
+                    padding: 0;
+                    button {
+                        width: 45%;
+                        height: 0.933333rem;
+                        border: 1px solid #e53939;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        color: #e53939;
+                        font-size: 0.426667rem;
+                        outline: none;
+                    }
+                    .redBtn {
+                        margin-left: 0.333333rem;
+                    }
+                }
+            }
+        }
+    }
+}

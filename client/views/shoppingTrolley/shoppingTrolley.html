@@ -1,0 +1,58 @@
+<template name='shoppingTrolley'>
+    <div id="shoppingTrolley">
+
+
+       <!--  <div class="searchArea">
+                <div class="reminderArea">
+                    <h4>温馨提示</h4>
+                    <p>您的购物车还没有商品</p>
+                    <p>快去购买商品吧</p>
+                </div>
+                <div class="scanAllProduct">
+                    <button>查看商品</button>
+                </div>
+            </div> -->
+        <!-- 产品列表 -->
+        <div class="productsLists">
+            
+        </div>
+        <!-- 合计全选 & 结算 -->
+        <div class="settlementArea">
+            <div class="selectAll" id="selectAllBtn">
+                <button class="cycleCheckBtn" value='false'><img src="/select.png" alt="选择图标"></button>
+                <span>全选</span>
+                <div class="clear"></div>
+            </div>
+            <div class="totalPrice">
+                <span>合计：<i id='totalPrice'></i></span>
+                <button id="settleAccounts">结算(<b id='selectProductNum'></b>)</button>
+                <button id="deleteBtn">删除(<b id='deleteProductNum'></b>)</button>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 删除提示弹出框 -->
+        <div class="coverContainer" id="deleteAlert">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <p><img src="/makeSure.png" alt="购物车按钮"></p>
+                    <p>是否删除该产品</p>
+                    <div class="alertOperationBtn operationBtn">
+                        <button id="cancleSave">取消</button>
+                        <button class="redBtn" id="save">删除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--图片显示框-->
+        <div class="pictureContainer">
+            <div class="successAlert">
+                <div class="innerArea">
+                    <div class="button">Ｘ</div>
+                    <div class="imgShow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

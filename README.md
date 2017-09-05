@@ -1,6 +1,4 @@
-#Web App Client Demo
-
-#文件结构以及意义
+# 文件结构以及意义
 
 	|---client							保存客户端必须加载的所有资源。
 	|     |---compatibility				保存所有需要是全局变量的第三方资源，例如jQuery等。
